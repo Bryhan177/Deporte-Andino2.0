@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.cuerpologin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.divlogin {
+    width: 420px;
+    background: transparent;
+    opacity: 1;
+    border: 2px solid gray;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 20px;
+    padding: 30px 40px;
+    box-shadow: 7px 13px 37px aqua;
+}
+
+.divlogin h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.divlogin .input1 {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: none;
+    margin: 30px 0;
+}
+
+.divlogin .input2 {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: none;
+    margin: 30px 0;
+}
+
+.input1 input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid gray;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input2 input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid gray;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input1 input::placeholder {
+    color: #fff;
+}
+
+.input2 input::placeholder {
+    color: #fff;
+}
+
+.input1 i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.input2 i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.divlogin .recordar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.recordar label input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.recordar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#botoniniciar {
+    text-decoration: none;
+    color: black;
+}
+
+.recordar a:hover {
+    text-decoration: underline;
+}
+
+.divlogin .boton {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.divlogin .linkregistro {
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.linkregistro p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.linkregistro p a {
+    text-decoration: underline;
+}
+
+
+/*registro*/
+
+body {
+    background-color: black;
+    background-position: center;
+}
+
+.form_registro {
+    width: 500px;
+    background: rgba(4, 67, 81, 0.5);
+    padding: 100px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    font-family: calibri;
+    color: white;
+    box-shadow: 7px 13px 37px aqua;
+}
+
+.form_registro h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    width: 230px;
+    background: rgba(4, 67, 81, 1);
+    padding: 5px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    border: 0px;
+}
+
+.form_registro p {
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.form_registro a {
+    color: white;
+    text-decoration: none;
+}
+
+.form_registro a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form_registro .botons {
+    width: 300px;
+    background: rgba(4, 67, 81, 1);
+    border-radius: 30px;
+    border: none;
+    padding: 9px;
+    color: white;
+    margin: 16px 0;
+    font-size: 10px;
+    line-height: 20px;
+    box-shadow: 7px 13px 37px aqua;
+}
+
+
+/*carrito de compras*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #a6d7dd;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 75%;
+    max-width: 512px;
+    margin: 20px;
+    box-shadow: 7px 13px 37px aqua;
+    border-radius: 40px;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.cart,
+.checkout {
+    margin-top: 20px;
+}
+
+.cart-header,
+.cart-item,
+.cart-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-header {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+.cart-item {
+    margin-bottom: 10px;
+}
+
+.cart-item input {
+    width: 60px;
+    padding: 5px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.cart-summary {
+    font-size: 1.2em;
+}
+
+.cart-summary span {
+    display: block;
+    margin: 5px 0;
+}
+
+.checkout form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkout label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.checkout input,
+.checkout select,
+.checkout button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.checkout button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.checkout button:hover {
+    background-color: #0056b3;
+}
+
+#credit-card-info {
+    display: none;
+}
+
+.cart-item .remove-item {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-item .remove-item:hover {
+    background-color: #c82333;
+}

@@ -1,0 +1,814 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bodymujer {
+    background: rgb(255, 255, 255);
+    color: rgb(9, 8, 8);
+}
+
+.bodyhombre {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.gif {
+    background-image: url(../img/img1.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bodyniños {
+    color: rgb(0, 0, 0);
+    background-image: url(../img/img1.gif);
+    background-repeat: no-repeat;
+    background-position: unset;
+    margin-bottom: 20%;
+}
+
+.header {
+    background-color: rgb(157, 231, 213);
+    height: 60px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 7px 13px 37px aqua;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid;
+    border-radius: 30px;
+    border-block-start: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-block-end-color: rgb(0, 0, 0);
+}
+
+.barralink {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 30px;
+    padding: 0px 40px;
+    line-height: 60px;
+}
+
+.barramenu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.barramenuopciones {
+    font-family: 18px;
+    margin: 0px 10px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+.barramenulink:hover {
+    background-color: gold;
+}
+
+.barramenulink {
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.tabla {
+    padding: 0px 100px 10px 160px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.cajamujer {
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+}
+
+.cajamujer:hover {
+    background-color: gold;
+}
+
+.cajaniñosinisio {
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    color: black;
+}
+
+.cajaniñosinisio:hover {
+    background-color: gold;
+}
+
+#imagenniñosinisio {
+    border-radius: 50px;
+}
+
+.tabla3 {
+    padding: 0px 80px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.cajaanimal2 {
+    list-style: none;
+    background-color: transparent;
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(159, 115, 115);
+    width: 300px;
+    overflow: hidden;
+    padding: 20px;
+    font-size: 75%;
+}
+
+.cajaanimal2:hover {
+    background-color: rgb(159, 115, 115, 0.4);
+}
+
+#imagenmujerinisio {
+    border-radius: 50px;
+}
+
+#h1_1 {
+    text-align: center;
+    font-size: 22px;
+    background: none;
+    position: relative;
+    top: 20px;
+}
+
+.gif2 {
+    border-radius: 20%;
+    background-size: cover;
+}
+
+.img2 {
+    width: 50%;
+    height: 50%;
+    border-radius: 50px;
+    transition: transform 0.3s;
+}
+
+.img2:hover {
+    transform: scale(1.2);
+}
+
+#p1 {
+    width: 110px;
+    height: 110px;
+}
+
+#p3 {
+    width: 220px;
+    height: 110px;
+    margin: 3px 3px
+}
+
+#p5 {
+    width: 110px;
+    height: 110px;
+}
+
+#p7 {
+    height: 110px;
+}
+
+#p8 {
+    height: 110px;
+}
+
+#p11 {
+    height: 110px;
+}
+
+.tabla1 {
+    padding: 0px 80px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.cajahombreinisio {
+    list-style: none;
+    background-image: none;
+    border-radius: 50px;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cajahombreinisio:hover {
+    background-color: rgba(73, 126, 126, 0.88);
+}
+
+#imagenhombreinisio {
+    border-radius: 50px;
+}
+
+.cajahombre {
+    font-size: 75%;
+    list-style: none;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 50px;
+    color: black;
+    border: 1px solid rgb(97, 99, 96);
+    overflow: hidden;
+}
+
+.cajahombre:hover {
+    background-color: #b7beb6;
+}
+
+.cajaniños {
+    list-style: none;
+    background-color: transparent;
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 208, 255);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.cajaniños:hover {
+    background-color: rgba(4, 215, 252, 0.3);
+}
+
+#imagen8niños {
+    text-align: center;
+}
+
+#imagen8niñosprecio {
+    position: relative;
+    right: 55px;
+    top: 25px;
+}
+
+#imagen8niñosboton {
+    position: relative;
+    left: 50px;
+    top: 5px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen1niñosboton {
+    position: relative;
+    left: 50px;
+    top: 5px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen1niñosprecio {
+    position: relative;
+    right: 70px;
+    top: 25px;
+}
+
+#imagen2niñosboton {
+    position: relative;
+    left: 50px;
+    top: 15px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen2niñosprecio {
+    position: relative;
+    right: 65px;
+    top: 35px;
+}
+
+#imagen3niñosboton {
+    position: relative;
+    left: 50px;
+    top: 15px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen3niñosprecio {
+    position: relative;
+    right: 55px;
+    top: 35px;
+}
+
+#imagen4niñosboton {
+    position: relative;
+    left: 45px;
+    bottom: 5px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen4niñosprecio {
+    position: relative;
+    right: 55px;
+    top: 15px;
+}
+
+#imagen5niñosboton {
+    position: relative;
+    left: 50px;
+    bottom: 5px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen5niñosprecio {
+    position: relative;
+    right: 60px;
+    top: 15px;
+}
+
+#imagen6niñosboton {
+    position: relative;
+    left: 50px;
+    bottom: 2px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen6niñosprecio {
+    position: relative;
+    right: 60px;
+    top: 18px;
+}
+
+#imagen7niñosboton {
+    position: relative;
+    left: 50px;
+    top: 10px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen7niñosprecio {
+    position: relative;
+    right: 55px;
+    top: 30px;
+}
+
+#imagen9niñosboton {
+    position: relative;
+    left: 50px;
+    bottom: 5px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen9niñosprecio {
+    position: relative;
+    right: 55px;
+    top: 16px;
+}
+
+#imagen10niñosboton {
+    position: relative;
+    left: 50px;
+    top: 35px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen10niñosprecio {
+    position: relative;
+    right: 60px;
+    top: 56px;
+}
+
+#imagen11niñosboton {
+    position: relative;
+    left: 50px;
+    top: 40px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen11niñosprecio {
+    position: relative;
+    right: 55px;
+    top: 60px;
+}
+
+#imagen12niñosboton {
+    position: relative;
+    left: 50px;
+    top: 10px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen12niñosprecio {
+    position: relative;
+    right: 55px;
+    top: 30px;
+}
+
+#estiloboton {
+    text-decoration: none;
+    color: black;
+}
+
+#imagen1hombreboton {
+    position: relative;
+    left: 50px;
+    top: 5px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen1hombreprecio {
+    position: relative;
+    right: 65px;
+    top: 25px;
+}
+
+#imagen2hombreboton {
+    position: relative;
+    left: 55px;
+    top: 5px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen2hombreprecio {
+    position: relative;
+    right: 65px;
+    top: 25px;
+}
+
+#imagen3hombreboton {
+    position: relative;
+    left: 50px;
+    top: 20px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen3hombreprecio {
+    position: relative;
+    right: 55px;
+    top: 40px;
+}
+
+#imagen4hombreboton {
+    position: relative;
+    left: 50px;
+    top: 20px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen4hombreprecio {
+    position: relative;
+    right: 60px;
+    top: 40px;
+}
+
+#imagen5hombreboton {
+    position: relative;
+    left: 50px;
+    top: 20px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen5hombreprecio {
+    position: relative;
+    right: 60px;
+    top: 40px;
+}
+
+#imagen6hombreboton {
+    position: relative;
+    left: 50px;
+    top: 13px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen6hombreprecio {
+    position: relative;
+    right: 65px;
+    top: 35px;
+}
+
+#imagen7hombreboton {
+    position: relative;
+    left: 50px;
+    top: 20px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen7hombreprecio {
+    position: relative;
+    right: 55px;
+    top: 40px;
+}
+
+#imagen8hombreboton {
+    position: relative;
+    left: 55px;
+    top: 5px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen8hombreprecio {
+    position: relative;
+    right: 55px;
+    top: 25px;
+}
+
+#imagen9hombreboton {
+    position: relative;
+    left: 45px;
+    top: 20px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen9hombreprecio {
+    position: relative;
+    right: 60px;
+    top: 40px;
+}
+
+#imagen10hombreboton {
+    position: relative;
+    left: 45px;
+    top: 15px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen10hombreprecio {
+    position: relative;
+    right: 65px;
+    top: 35px;
+}
+
+#imagen11hombreboton {
+    position: relative;
+    left: 50px;
+    top: 10px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen11hombreprecio {
+    position: relative;
+    right: 55px;
+    top: 30px;
+}
+
+#imagen12hombreboton {
+    position: relative;
+    left: 50px;
+    top: 25px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen12hombreprecio {
+    position: relative;
+    right: 60px;
+    top: 45px;
+}
+
+#imagen1mujerboton {
+    position: relative;
+    left: 55px;
+    top: 5px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen1mujerprecio {
+    position: relative;
+    right: 55px;
+    top: 25px;
+}
+
+#imagen2mujerboton {
+    position: relative;
+    left: 55px;
+    top: 30px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen2mujerprecio {
+    position: relative;
+    right: 55px;
+    top: 50px;
+}
+
+#imagen3mujerboton {
+    position: relative;
+    left: 60px;
+    top: 20px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen3mujerprecio {
+    position: relative;
+    right: 55px;
+    top: 40px;
+}
+
+#imagen4mujerboton {
+    position: relative;
+    left: 55px;
+    top: 25px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen4mujerprecio {
+    position: relative;
+    right: 55px;
+    top: 45px;
+}
+
+#imagen5mujerboton {
+    position: relative;
+    left: 50px;
+    top: 15px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen5mujerprecio {
+    position: relative;
+    right: 55px;
+    top: 35px;
+}
+
+#imagen6mujerboton {
+    position: relative;
+    left: 55px;
+    top: 20px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen6mujerprecio {
+    position: relative;
+    right: 55px;
+    top: 40px;
+}
+
+#imagen7mujerboton {
+    position: relative;
+    left: 60px;
+    top: 15px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen7mujerprecio {
+    position: relative;
+    right: 55px;
+    top: 35px;
+}
+
+#imagen8mujerboton {
+    position: relative;
+    left: 55px;
+    top: 5px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen8mujerprecio {
+    position: relative;
+    right: 55px;
+    top: 25px;
+}
+
+#imagen9mujerboton {
+    position: relative;
+    left: 55px;
+    top: 5px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen9mujerprecio {
+    position: relative;
+    right: 55px;
+    top: 25px;
+}
+
+#imagen10mujerboton {
+    position: relative;
+    left: 50px;
+    top: 10px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen10mujerprecio {
+    position: relative;
+    right: 55px;
+    top: 30px;
+}
+
+#imagen11mujerboton {
+    position: relative;
+    left: 50px;
+    top: 15px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen11mujerprecio {
+    position: relative;
+    right: 60px;
+    top: 35px;
+}
+
+#imagen12mujerboton {
+    position: relative;
+    left: 50px;
+    top: 20px;
+    border: none;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#imagen12mujerprecio {
+    position: relative;
+    right: 55px;
+    top: 40px;
+}
+
+.catalogo {
+    display: none;
+    /* Inicialmente oculto */
+    position: absolute;
+    background-color: yellow;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.catalogo a {
+    float: none;
+    color: blue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.catalogo a:hover {
+    background-color: red;
+}

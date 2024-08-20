@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#productos, #carrito {
+    margin-bottom: 20px;
+}
+
+.producto, #carrito ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+#total {
+    font-weight: bold;
+}
