@@ -7,17 +7,29 @@
     <title>Seccion de hombre</title>
     <link rel="stylesheet" href="../css/tienda.css">
     <link rel="icon" href="../img/balon_2_mujer-removebg-preview.png" type="image/x-icon" sizes="256x256 px">
-    <link rel="icon" href="../img/nike-removebg-preview.png" type="image/x-icon" sizes="256x256 px">
 </head>
-
-<body class="bodyhombre">
+<script>
+    Swal.fire({
+  position: "top",
+  icon: "success",
+  title: "Bienvenido a Deporte Andino",
+  showConfirmButton: false,
+  timer: 2000
+});
+</script>
+<style>
+    body{
+        background-size: cover;
+    }
+</style>
+<body background="../img/depor4.avif">
     <header class="header">
         <nav class="barra">
             <a href="" class="logo barralink">Deporte Andino COL</a>
             <ul class="barramenu">
                 <li class="barramenuopciones"><a href="carrito.html" class="barramenulink barralink">Carrito</a></li>
                 <li class="barramenuopciones"><a href="inicio.html" class="barramenulink barralink">Inicio</a></li>
-                <li class="barramenuopciones"><a href="inisiosesion.html" class="barramenulink barralink">Perfil</a></li>
+                <li class="barramenuopciones"><a href="perfil.html" class="barramenulink barralink">Perfil</a></li>
             </ul>
         </nav>
         <div>
@@ -35,18 +47,14 @@
                                 <h2>Guayos Adidas originales Máximo agarre en superficies cubiertas de hierba > </h2>
                             </li>
                             <h2 id="imagen1hombreprecio">400.000 COL</h2>
-                            <button id="imagen1hombreboton"><a href="carrito.html" id="estiloboton">Anadir al Carrito</a></button>
-
-
-
+                            <button id="imagen1hombreboton" onclick="agregarAlCarrito('Guayos Adidas originales', '400.000 COL', '../img/zapatos_hombre-removebg-preview.png')">Añadir al Carrito</button>
                             <td class="cajahombre">
                                 <a href="target"><img src="../img/guayos_hombre-removebg-preview.png" class="img2"></a>
                                 <li>
                                     <h2>adidas. guayos x crazyfast.3 terreno firme </h2>
                                 </li>
                                 <h2 id="imagen2hombreprecio">600.000 COL</h2>
-                                <button id="imagen2hombreboton"><a href="carrito.html" id="estiloboton">Anadir al Carrito</a></button>
-
+                            <button id="imagen1hombreboton" onclick="agregarAlCarrito('Guayos Adidas originales', '400.000 COL', '../img/zapatos_hombre-removebg-preview.png')">Añadir al Carrito</button>
 
                                 <td class="cajahombre">
                                     <a href="target"><img src="../img/balon_rugby-removebg-preview.png" class="img2"></a>
@@ -54,8 +62,7 @@
                                         <h2>Balón Rugby Gilbert Cuero G-TR 4000 N5 <br></h2>
                                     </li>
                                     <h2 id="imagen3hombreprecio">980.000 COL</h2>
-                                    <button id="imagen3hombreboton"><a href="carrito.html" id="estiloboton">Anadir al Carrito</a></button>
-                                </td>
+                            <button id="imagen1hombreboton" onclick="agregarAlCarrito('Guayos Adidas originales', '400.000 COL', '../img/zapatos_hombre-removebg-preview.png')">Añadir al Carrito</button>                                </td>
 
                                 <td class="cajahombre">
                                     <a href="target"><img src="../img/balon_rugby_2-removebg-preview.png" class="img2"></a>
@@ -64,8 +71,7 @@
                                         </h2>
                                     </li>
                                     <h2 id="imagen4hombreprecio">700.000 COL</h2>
-                                    <button id="imagen4hombreboton"><a href="carrito.html" id="estiloboton">Anadir al Carrito</a></button>
-                                </td>
+                            <button id="imagen1hombreboton" onclick="agregarAlCarrito('Guayos Adidas originales', '400.000 COL', '../img/zapatos_hombre-removebg-preview.png')">Añadir al Carrito</button>                                </td>
                     </tr>
 
                     <tr>
@@ -75,8 +81,7 @@
                                 <h2> Casco De Ciclismo Bell Strat Original </h2>
                             </li>
                             <h2 id="imagen5hombreprecio">150.000 COL</h2>
-                            <button id="imagen5hombreboton"><a href="carrito.html" id="estiloboton">Anadir al Carrito</a></button>
-
+                            <button id="imagen1hombreboton" onclick="agregarAlCarrito('Guayos Adidas originales', '400.000 COL', '../img/zapatos_hombre-removebg-preview.png')">Añadir al Carrito</button>
 
                             <td class="cajahombre">
                                 <a href="target"><img src="../img/casco_hombre_2-removebg-preview.png" class="img2"></a>
@@ -84,8 +89,7 @@
                                     <h2>Casco ciclismo CONTRARRELOJ </h2>
                                 </li>
                                 <h2 id="imagen6hombreprecio">230.000 COL</h2>
-                                <button id="imagen6hombreboton"><a href="" id="estiloboton">Anadir al Carrito</a></button>
-
+                            <button id="imagen1hombreboton" onclick="agregarAlCarrito('Guayos Adidas originales', '400.000 COL', '../img/zapatos_hombre-removebg-preview.png')">Añadir al Carrito</button>
 
                                 <td class="cajahombre">
                                     <a href="target"><img src="../img/aletas_hombre-removebg-preview.png" class="img2"></a>
@@ -93,16 +97,14 @@
                                         <h2> Aletas De Buceo Tusa Imprex Duo</h2>
                                     </li>
                                     <h2 id="imagen7hombreprecio">350.000 COL</h2>
-                                    <button id="imagen7hombreboton"><a href="carrito.html" id="estiloboton">Anadir al Carrito</a></button>
-                                </td>
+                            <button id="imagen1hombreboton" onclick="agregarAlCarrito('Guayos Adidas originales', '400.000 COL', '../img/zapatos_hombre-removebg-preview.png')">Añadir al Carrito</button>                                </td>
                                 <td class="cajahombre">
                                     <a href="target"><img src="../img/mascara_buceo-removebg-preview.png" class="img2"></a>
                                     <li>
                                         <h2>Set Snorkel Careta Gafas Buceo Mascara Natacion Profesional </h2>
                                     </li>
                                     <h2 id="imagen8hombreprecio">140.000 COL</h2>
-                                    <button id="imagen8hombreboton"><a href="" id="estiloboton">Anadir al Carrito</a></button>
-                                </td>
+                            <button id="imagen1hombreboton" onclick="agregarAlCarrito('Guayos Adidas originales', '400.000 COL', '../img/zapatos_hombre-removebg-preview.png')">Añadir al Carrito</button>                                </td>
                     </tr>
                     <tr>
                         <td class="cajahombre">
@@ -111,36 +113,48 @@
                                 <h2>Casco rugby </h2>
                             </li>
                             <h2 id="imagen9hombreprecio">90.000 COL</h2>
-                            <button id="imagen9hombreboton"><a href="carrito.html" id="estiloboton">Anadir al Carrito</a></button>
-                        </td>
+                            <button id="imagen1hombreboton" onclick="agregarAlCarrito('Guayos Adidas originales', '400.000 COL', '../img/zapatos_hombre-removebg-preview.png')">Añadir al Carrito</button>                        </td>
                         <td class="cajahombre">
                             <a href="target"><img src="../img/casco_2_rugby-removebg-preview.png" class="img2"></a>
                             <li>
                                 <h2>Casco rugby modelo PRO-C</h2>
                             </li>
                             <h2 id="imagen10hombreprecio">100.000 COL</h2>
-                            <button id="imagen10hombreboton"><a href="carrito.html" id="estiloboton">Anadir al Carrito</a></button>
-
+                            <button id="imagen1hombreboton" onclick="agregarAlCarrito('Guayos Adidas originales', '400.000 COL', '../img/zapatos_hombre-removebg-preview.png')">Añadir al Carrito</button>
                             <td class="cajahombre">
                                 <a href="target"><img src="../img/guantes_hombre-removebg-preview.png" class="img2"></a>
                                 <li>
                                     <h2>Guantes de Boxeo Kangaroo Classic Correa</h2>
                                 </li>
                                 <h2 id="imagen11hombreprecio">50.000 COL</h2>
-                                <button id="imagen11hombreboton"><a href="carrito.html" id="estiloboton">Anadir al Carrito</a></button>
-
+                            <button id="imagen1hombreboton" onclick="agregarAlCarrito('Guayos Adidas originales', '400.000 COL', '../img/zapatos_hombre-removebg-preview.png')">Añadir al Carrito</button>
                                 <td class="cajahombre">
                                     <a href="target"><img src="../img/casco_boxeo_hombre-removebg-preview.png" class="img2"></a>
                                     <li>
                                         <h2>Casco Protector Box </h2>
                                     </li>
                                     <h2 id="imagen12hombreprecio">80.000 COL</h2>
-                                    <button id="imagen12hombreboton"><a href="carrito.html" id="estiloboton">Anadir al Carrito</a></button>
-                                </td>
+                            <button id="imagen1hombreboton" onclick="agregarAlCarrito('Guayos Adidas originales', '400.000 COL', '../img/zapatos_hombre-removebg-preview.png')">Añadir al Carrito</button>                                </td>
                     </tr>
+                    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                    <script>
+                        function agregarAlCarrito(nombre, precio, imagen) {
+                            const producto = { nombre, precio, imagen };
+                            let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+                            carrito.push(producto);
+                            localStorage.setItem('carrito', JSON.stringify(carrito));
+                
+                            Swal.fire({
+                                position: 'top',
+                                icon: 'success',
+                                title: 'Producto añadido al carrito',
+                                showConfirmButton: false,
+                                timer: 1500
+                            });
+                        }
+                    </script>
             </body>
         </div>
     </header>
 </body>
-
 </html>

@@ -1,41 +1,173 @@
 :root {
-    --primary-color: #4a90e2;
-    --secondary-color: #f5f5f5;
+    --primary-color: #ff4500; /* Color principal de Temu */
+    --secondary-color: #ffffff;
     --text-color: #333;
     --border-color: #ddd;
     --success-color: #28a745;
     --danger-color: #dc3545;
+    --tab-active-color: #ff5722;
 }
 
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: #f9f9f9;
+    background-image: url(../img/depor6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
 }
-
+.botones{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    background: linear-gradient(20deg, blue,white,white,blue,white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+.linea{
+    text-decoration: none;
+    color: white;
+}
+button{
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color yellow 0.7s
+}
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.formcar{
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    font-weight:bold;
+    
+}
+.formcar,th,td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    background-color: black;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 h1, h2 {
-    color: var(--primary-color);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
     margin-bottom: 20px;
 }
 
-.cart, .checkout {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 30px;
+.tab-button {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
-.cart-header {
+.tab-button:hover {
+    background-color: #ddd;
+}
+
+.tab-button.active {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.product-item {
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    font-size: 18px;
+    color: var(--text-color);
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 16px;
+    color: var(--primary-color);
+    margin: 5px 0;
+}
+
+.product-item button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.product-item button:hover {
+    background-color: var(--tab-active-color);
+}
+
+.cart, .checkout {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.cart-header, .cart-item {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
     gap: 10px;
@@ -45,12 +177,21 @@ h1, h2 {
 }
 
 .cart-item {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-    gap: 10px;
-    padding: 15px 0;
     border-bottom: 1px solid var(--border-color);
     align-items: center;
+}
+
+.product-name {
+    display: flex;
+    align-items: center;
+}
+
+.product-name img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 10px;
 }
 
 .product-quantity {
@@ -77,6 +218,7 @@ h1, h2 {
 .cart-summary {
     margin-top: 20px;
     text-align: right;
+    font-size: 18px;
 }
 
 .cart-summary span {
@@ -84,24 +226,24 @@ h1, h2 {
     margin-bottom: 10px;
 }
 
-form {
+.checkout form {
     display: grid;
     gap: 15px;
 }
 
-label {
+.checkout label {
     font-weight: bold;
 }
 
-input, select {
+.checkout input, .checkout select {
     width: 100%;
-    padding: 10px;
+    padding: 8px;
     border: 1px solid var(--border-color);
-    border-radius: 4px;
-    font-size: 16px;
+    border-radius: 9px;
+    font-size: 17px;
 }
 
-button[type="submit"] {
+.checkout button[type="submit"] {
     background-color: var(--success-color);
     color: white;
     padding: 12px 20px;
@@ -112,15 +254,8 @@ button[type="submit"] {
     transition: background-color 0.3s;
 }
 
-button[type="submit"]:hover {
+.checkout button[type="submit"]:hover {
     background-color: #218838;
-}
-
-#credit-card-info {
-    border: 1px solid var(--border-color);
-    border-radius: 4px;
-    padding: 15px;
-    margin-top: 15px;
 }
 
 @media (max-width: 768px) {
@@ -136,47 +271,15 @@ button[type="submit"]:hover {
     .remove-item {
         grid-column: span 2;
     }
+
+    .tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab-button {
+        margin: 5px 0;
+        width: 100%;
+        max-width: 200px;
+    }
 }
-
-
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-.product-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    border: 1px solid var(--border-color);
-    border-radius: 4px;
-}
-
-.product-item button {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.product-item input {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid var(--border-color);
-    border-radius: 4px;
-}
-
-/* Colores para categorías */
-.futbol { background-color: #FFE5E5; }
-.tenis { background-color: #E5FFE5; }
-.boxeo { background-color: #E5E5FF; }
-.running { background-color: #FFFFE5; }
-.natacion { background-color: #E5FFFF; }
-.ciclismo { background-color: #FFE5FF; }
-/* ... añade más colores para otras categorías ... */
