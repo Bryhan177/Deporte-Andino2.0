@@ -6,7 +6,7 @@
     <title>Carrito</title>
     <link rel="stylesheet" href="../css/carrito.css">
     <link rel="icon" href="../img/balon_2_mujer-removebg-preview.png" type="image/x-icon" sizes="256x256">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
@@ -28,49 +28,104 @@
                 <!-- Los productos se añadirán aquí -->
             </tbody>
         </table>
-        <div class="botones">
-            <button id="vaciar-carrito">Vaciar Carrito</button>
-            <button id="procesar-pago">Procesar Pago</button>
-            <div id="total"></div>
-            <button><a class="linea" href="./inicio.html">Volver</a></button>
+        <div class="metodo-pago-container">
+            <div class="botones">
+                <button id="vaciar-carrito"><i class="fas fa-trash-alt"></i> Vaciar Carrito</button>
+                <button id="procesar-pago"><i class="fas fa-credit-card"></i> Procesar Pago</button>
+                <div id="total">$0.00</div>
+                <button><a class="linea" href="./inicio.html"><i class="fas fa-arrow-left"></i> Volver</a></button>
+            </div>
+            
+            <div class="metodos-pago">
+                <h2>Selecciona tu método de pago:</h2>
+                <div class="metodo">
+                    <input type="radio" id="tarjeta" name="metodo-pago" value="Tarjeta" checked>
+                    <label for="tarjeta"><i class="fas fa-credit-card"></i> Tarjeta de Crédito/Débito</label>
+                </div>
+                <div class="metodo">
+                    <input type="radio" id="paypal" name="metodo-pago" value="PayPal">
+                    <label for="paypal"><i class="fab fa-paypal"></i> PayPal</label>
+                </div>
+                <div class="metodo">
+                    <input type="radio" id="transferencia" name="metodo-pago" value="Transferencia">
+                    <label for="transferencia"><i class="fas fa-university"></i> Transferencia Bancaria</label>
+                </div>
+                <div class="metodo">
+                    <input type="radio" id="efectivo" name="metodo-pago" value="Efectivo">
+                    <label for="efectivo"><i class="fas fa-money-bill-wave"></i> Pago en Efectivo</label>
+                </div>
+                <div class="metodo">
+                    <input type="radio" id="cripto" name="metodo-pago" value="Cripto">
+                    <label for="cripto"><i class="fab fa-bitcoin"></i> Criptomonedas</label>
+                </div>
+            </div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="../js/carrito.js"></script>
     </main>
     <script>
     document.addEventListener('DOMContentLoaded', () => {
-        const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-        const tbody = document.querySelector('#carrito tbody');
-        const vaciarCarritoButton = document.getElementById('vaciar-carrito');
+    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    const tbody = document.querySelector('#carrito tbody');
+    const vaciarCarritoButton = document.getElementById('vaciar-carrito');
+    const totalDiv = document.getElementById('total');
+    const procesarPagoButton = document.getElementById('procesar-pago');
+    let total = 0;
 
-        function actualizarCarrito() {
-            tbody.innerHTML = '';
-            carrito.forEach((producto, index) => {
-                const row = document.createElement('tr');
-                row.innerHTML = `
-                    <td><img src="${producto.imagen}" alt="${producto.nombre}" style="width: 100px;"></td>
-                    <td>${producto.nombre}</td>
-                    <td>${producto.precio}</td>
-                    <td><button class="eliminar" data-index="${index}">Eliminar</button></td>
-                `;
-                tbody.appendChild(row);
-            });
-
-            document.querySelectorAll('.eliminar').forEach(button => {
-                button.addEventListener('click', () => {
-                    const index = button.getAttribute('data-index');
-                    carrito.splice(index, 1);
-                    localStorage.setItem('carrito', JSON.stringify(carrito));
-                    actualizarCarrito();
-                });
-            });
-        }
-
-        actualizarCarrito();
-
-        vaciarCarritoButton.addEventListener('click', () => {
-            localStorage.removeItem('carrito');
-            actualizarCarrito();
+    function actualizarCarrito() {
+        tbody.innerHTML = '';
+        total = 0;
+        carrito.forEach((producto, index) => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td><img src="${producto.imagen}" alt="${producto.nombre}" style="width: 100px;"></td>
+                <td>${producto.nombre}</td>
+                <td>${producto.precio}</td>
+                <td><button class="eliminar" data-index="${index}">Eliminar</button></td>
+            `;
+            tbody.appendChild(row);
+            total += parseFloat(producto.precio.replace('$', ''));
         });
+
+        totalDiv.textContent = `$${total.toFixed(2)}`;
+
+        document.querySelectorAll('.eliminar').forEach(button => {
+            button.addEventListener('click', () => {
+                const index = button.getAttribute('data-index');
+                carrito.splice(index, 1);
+                localStorage.setItem('carrito', JSON.stringify(carrito));
+                actualizarCarrito();
+            });
+        });
+    }
+
+    actualizarCarrito();
+
+    vaciarCarritoButton.addEventListener('click', () => {
+        localStorage.removeItem('carrito');
+        carrito.length = 0;
+        actualizarCarrito();
     });
+
+    procesarPagoButton.addEventListener('click', () => {
+        const metodoPagoSeleccionado = document.querySelector('input[name="metodo-pago"]:checked').value;
+        if (carrito.length === 0) {
+    Swal.fire({
+        title: 'Carrito vacío',
+        text: 'Añade productos antes de procesar el pago.',
+        icon: 'warning',
+        confirmButtonText: 'Aceptar'
+    });
+} else {
+    Swal.fire({
+        title: 'Procesando pago',
+        text: `Has seleccionado ${metodoPagoSeleccionado}. Procesando el pago de $${total.toFixed(2)}...`,
+        icon: 'info',
+        confirmButtonText: 'Aceptar'
+    });
+}});
+});
+
 </script>
 </body>
 </html>

@@ -1,13 +1,14 @@
 :root {
-    --primary-color: #ff4500; /* Color principal de Temu */
+    --primary-color: #ff4500;
     --secondary-color: #ffffff;
     --text-color: #333;
     --border-color: #ddd;
     --success-color: #28a745;
     --danger-color: #dc3545;
-    --tab-active-color: #ff5722;
+    --button-bg: #007bff;
+    --button-hover-bg: #0056b3;
+    --button-color: #fff;
 }
-
 body {
     font-family: 'Arial', sans-serif;
     background-image: url(../img/depor6.jpg);
@@ -16,30 +17,65 @@ body {
     margin: 0;
     padding: 0;
 }
-.botones{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    background: linear-gradient(20deg, blue,white,white,blue,white);
+.metodo-pago-container {
+    max-width: 800px;
+    margin: 20px auto;
     padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: linear-gradient(20deg, #007bff, #ffffff);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-decoration: none;
+}
+
+button {
+    background-color: var(--button-bg);
+    color: var(--button-color);
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+button:hover {
+    background-color: var(--button-hover-bg);
+}
+
+.metodos-pago {
+    margin-top: 20px;
+}
+
+.metodo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.metodo label {
+    font-size: 18px;
+    margin-left: 10px;
+    color: var(--text-color);
+}
+
+#total {
+    font-size: 24px;
+    color: var(--primary-color);
+    font-weight: bold;
 }
 .linea{
     text-decoration: none;
     color: white;
-}
-button{
-    background-color: blue;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 18px;
-    transition: background-color yellow 0.7s
 }
 main {
     max-width: 800px;
